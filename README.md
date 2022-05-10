@@ -11,4 +11,6 @@ Pour clôner le dépôt git il faut faire ça :
 
 git init
 
-git clone 
+git clone https://github.com/TitouanBOURLARD/projetwf3.git
+
+
