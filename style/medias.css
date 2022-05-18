@@ -1,0 +1,390 @@
+* {
+    background-color: black;
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    width: 70%;
+    background-color: black;
+    height: 40px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 40px;
+}
+
+.nav a{
+    margin: auto;
+    padding: 25px;
+    font-size: larger;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover{
+    color: gold;
+}
+
+/* LOGO NAV BARRE */ 
+
+.logo{
+    height: 80px;
+    width: 30%;
+    background-color: black;
+    margin: auto;
+}
+.logo img{
+    width: 50%;
+    margin: 5px;
+}
+
+header {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    color: cadetblue;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#navBar {
+    width: 100%;
+    height: 7vh;
+}
+
+#imageGroupe {
+    opacity: 0.1;
+}
+
+#photoGroupe {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position:absolute;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SOUS MENU */
+
+#container {
+    width: 60%;
+    margin-left: 18%;
+    margin-right: 18%;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#sousMenu {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+    margin-top: -200px;
+}
+
+.chapitre {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+ul li a {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+/* PHOTOS */ 
+
+#container2 {
+    width: 60%;
+    margin-left: 18%;
+    margin-right: 18%;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+#photos {
+    font-size: xx-large;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: gold;
+}
+
+.sousTitre {
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+
+/* PREMIERE LIGNE D'IMAGE */
+
+.image1 {
+    width: 35%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image2 {
+    width: 17%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image3 {
+    width: 17%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image4 {
+    width: 17%;
+    height: 300px;
+    margin: 1%;
+}
+
+/* DEUXIEME LIGNE D'IMAGE */
+
+.image5 {
+    width: 25%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image6 {
+    width: 35%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image7 {
+    width: 25%;
+    height: 300px;
+    margin: 1%;
+}
+
+/* TROISIEME LIGNE D'IMAGE */
+
+.image8 {
+    width: 21%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image9 {
+    width: 21%;
+    height: 300px;
+    margin: 1%;
+}
+
+.image10 {
+    width: 21%;
+    height: 300px;
+    margin: 1%;
+}
+.image11 {
+    width: 21%;
+    height: 300px;
+    margin: 1%;
+}
+
+/* DERNIERE LIGNE D'IMAGE */
+
+.image12 {
+    width: 43.5%;
+    height: 500px;
+    margin: 1%;
+}
+
+.image13 {
+    width: 43.5%;
+    height: 500px;
+    margin: 1%;
+}
+
+
+/* CONTAINER VIDEOS */
+
+#container3 {
+    width: 60%;
+    margin-left: 18%;
+    margin-right: 18%;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+#videos {
+    font-size: xx-large;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: gold;
+    margin-top: 15%;
+}
+
+/* STYLE POUR LES LIENS DANS LES SOUS TITRES */ 
+
+.liens {
+    text-decoration: none;
+    color: gold;
+}
+
+.liens:hover {
+    color: gold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.liens:visited {
+    color: gold;
+    text-decoration: none;
+}
+
+/* STYLE POUR LES ARTICLES */
+
+#articles {
+    font-size: xx-large;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: gold;
+    margin-top: 15%;
+}
+
+#container4 {
+    width: 60%;
+    margin-left: 18%;
+    margin-right: 18%;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+/* PREMIER ARTICLE */ 
+
+#festival1 {
+    margin-top: 5%;
+}
+
+.premierFestival {
+    width: 45.5%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+/* DEUXIEME ARTICLE */ 
+
+#festival2 {
+    margin-top: 5%;
+}
+
+.deuxiemeFestival {
+    width: 20%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+/* TROISIEME FESTIVAL */
+
+#festival3 {
+    margin-top: 5%;
+}
+
+.troisiemeFestival {
+    width: 50%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+/* QUATRIEME FESTIVAL */
+
+#festival4 {
+    margin-top: 5%;
+}
+
+.quatriemeFestival {
+    width: 50%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+/* CINQUIEME FESTIVAL */ 
+
+#festival5 {
+    margin-top: 5%;
+}
+
+.cinquiemeFestival {
+    width: 50%;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+/* STYLE FOOTER */ 
+
+footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#logoFooter {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+#facebook {
+    height: 30px;
+    width: 30px;
+    color: gold;
+}
+
+#contactFooter {
+    color: gold;
+    font-size: large;
+}
