@@ -1,6 +1,3 @@
-* {
-    background-color: black;
-}
 
 .container{
     background-color: black;
@@ -31,6 +28,30 @@
 
 .nav a:hover{
     color: gold;
+}
+
+.logo{
+    height: 100px;
+    width: 30%;
+    background-color: black;
+    margin: auto;
+}
+.logo img{
+    width: 50%;
+    margin: 10px;
+}
+
+.account{
+    filter: invert(100%);
+    width: 5%;
+    margin: auto;
+}
+.account img{
+    margin: auto;
+    width: 60%;
+}
+body{
+    background-color: black;
 }
 
 /* LOGO NAV BARRE */ 
