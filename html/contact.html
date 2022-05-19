@@ -29,8 +29,8 @@
             $('form').submit(function(event) {
                 event.preventDefault();
 
-                // $.post( "https://projetwf3.netlify.app/.netlify/functions/contact", {
-                $.post( "http://localhost:8888/.netlify/functions/contact", {
+                $.post( "https://projetwf3.netlify.app/.netlify/functions/contact", {
+                // $.post( "http://localhost:8888/.netlify/functions/contact", {
                     name: event.target.name.value,
                     email: event.target.email.value,
                     message: event.target.message.value,
