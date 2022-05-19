@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-module.exports.handler = function (event) {
+module.exports.handler = async function (event) {
 
     response = JSON.parse(event.body);
 
@@ -8,14 +8,14 @@ module.exports.handler = function (event) {
         host: 'smtp.mailtrap.io',
         port: 2525,
         auth: {
-            user: '9228554009d35d',
-            pass: '627014ab723019'
+            user: '',
+            pass: ''
         }
     });
 
     const mailOptions = {
-        from: 'david@davidbraud.io',
-        to: 'dbraudbass@gmail.com',
+        from: '',
+        to: '',
         subject: response.subject,
         text: `
       Name: 
@@ -29,19 +29,12 @@ module.exports.handler = function (event) {
     `
     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
-            return {
-                statusCode: 200,
-                body: error,
-            };
-        } else {
-            console.log('Email sent: ' + info.response);
-            return {
-                statusCode: 200,
-                body: info.response,
-            };
-        }
+    const info = await transporter.sendMail(mailOptions, function (error, info) {
+        return info || error;
     });
+
+    return {
+        statusCode: 200,
+        body: info,
+    };
 }
