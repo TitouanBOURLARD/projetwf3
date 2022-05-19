@@ -132,6 +132,8 @@ body{
     color: gold;
 }
 
+/* FOOTER */
+
 .network{
     width: 40px;
     height: 40px;
@@ -139,8 +141,7 @@ body{
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    margin-bottom: 200px;
-    margin-top: 200px;
+    margin-bottom: 50px;
 }
 
 .network img{
@@ -151,6 +152,46 @@ body{
 .network img:hover{
     filter: invert(0%);
     background-color: gold;
+}
+
+.footer{
+    background-color: rgb(10, 10, 10);
+    padding: 50px;
+    margin-top: 250px;
+}
+
+.textfooter{
+    width: 30%;
+    margin: auto;
+    color: gold;
+    font-family:  'Roboto Slab', serif;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coordonnées a{
+    text-decoration: none;
+    color: gold;
+}
+
+.coordonnées a:hover{
+    text-decoration: none;
+    color: gold;
+    text-decoration: underline;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: gold;
+}
+
+.navigation a:hover{
+    text-decoration: none;
+    color: gold;
+    text-decoration: underline;
 }
 /* .photogrp img{
     object-fit: cover;

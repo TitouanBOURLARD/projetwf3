@@ -86,7 +86,7 @@ img {
 }
 
 #imageGroupe {
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 #photoGroupe {
@@ -94,7 +94,7 @@ img {
     object-fit: cover;
     height: 100%;
     position:absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -384,28 +384,62 @@ ul li a:hover {
 
 /* STYLE FOOTER */ 
 
-footer {
+.network{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.network img{
     width: 100%;
-    color: white;
+    filter: invert(100%);
+}
+
+.network img:hover{
+    filter: invert(0%);
+    background-color: gold;
+}
+
+.footer{
+    background-color: rgb(10, 10, 10);
+    padding: 50px;
+    margin-top: 250px;
+}
+
+.textfooter{
+    width: 30%;
+    margin: auto;
+    color: gold;
+    font-family:  'Roboto Slab', serif;
+    line-height: 40px;
     text-align: center;
-    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#logoFooter {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 1%;
-}
-
-#facebook {
-    height: 30px;
-    width: 30px;
+.coordonnées a{
+    text-decoration: none;
     color: gold;
 }
 
-#contactFooter {
+.coordonnées a:hover{
+    text-decoration: none;
     color: gold;
-    font-size: large;
+    text-decoration: underline;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: gold;
+}
+
+.navigation a:hover{
+    text-decoration: none;
+    color: gold;
+    text-decoration: underline;
 }
