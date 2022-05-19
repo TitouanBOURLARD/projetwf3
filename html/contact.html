@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form method="post">
+        <p>
+            Nom : 
+            <input type="text" name="name" />
+        </p>
+        <p>
+            Email : 
+            <input type="email" name="email" />
+        </p>
+        <p>
+            Message : 
+            <textarea name="message"></textarea>
+        </p>
+        <button>Envoyer</button>
+    </form>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('form').submit(function(event) {
+                event.preventDefault();
+
+                jQuery.ajax ({
+                    url: 'http://localhost:8888/.netlify/functions/contacts',
+                    type: "POST",
+                    data: JSON.stringify({
+                        name: event.target.name.value,
+                        email: event.target.email.value,
+                        message: event.target.message.value,
+                    }),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function(data){
+                        console.log(data)
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

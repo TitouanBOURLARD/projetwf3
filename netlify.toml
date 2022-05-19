@@ -1,0 +1,6 @@
+[Settings]
+ID = "4d9239ae-b939-416f-8197-0ea8602cb62e"
+
+[build]
+  publish = "/html/"
+  functions = "functions"
