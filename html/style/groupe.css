@@ -116,6 +116,7 @@ img {
     font-size: xx-large;
     font-weight: 100;
     font-family: 'Roboto Slab', serif;
+    line-height: 40px;
 }
 
 .retourMenu {
@@ -129,6 +130,14 @@ img {
 
 .retourMenu:visited {
     color: gold;
+}
+
+.texte {
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-size: x-large;
+    font-weight: 100;
+    line-height: 40px;
 }
 
 /* TEXTE BIOGRAPHIQUE INDIVIDUEL */
@@ -151,6 +160,31 @@ h3 {
 
 .titre {
     font-weight: bold;
+}
+
+#joseTexte {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: x-large;
+    line-height: 40px;
+}
+
+#philTexte {
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: x-large;
+    line-height: 40px;
+}
+
+#alainTexte {
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: x-large;
+    line-height: 40px;
 }
 
 /* STYLE FOOTER */ 

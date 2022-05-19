@@ -8,15 +8,15 @@ module.exports.handler = async function (event) {
         host: 'smtp.mailtrap.io',
         port: 2525,
         auth: {
-            user: '',
-            pass: ''
+            user: 'a5385d1197c15d',
+            pass: '00b515be6253a7'
         }
     });
 
     const mailOptions = {
-        from: '',
-        to: '',
-        subject: response.subject,
+        from: 'contact@washingline.fr',
+        to: 'titouan.bourlard@hotmail.com',
+        subject: 'contact',
         text: `
       Name: 
       ${response.name}
