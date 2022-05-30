@@ -3,26 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <form method="post">
-        <p>
-            Nom : 
-            <input type="text" name="name" />
-        </p>
-        <p>
-            Email : 
-            <input type="email" name="email" />
-        </p>
-        <p>
-            Message : 
-            <textarea name="message"></textarea>
-        </p>
-        <button>Envoyer</button>
-    </form>
+    <header>
+      
+        
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img id="logo" src="assets/logowlok.png" alt="logo"></a>                  
+            </div>
+            
+            <div class="navbar">
+                <nav class="nav">
+                    <a href="index.html">Accueil</a>
+                    <a href="groupe.html">Groupe</a>
+                    <a href="medias.html">Médias</a>
+                    <a href="event.html">Evènements</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div class="account">
+                <a href="#"><img src="assets/user.png" alt="profil"></a>
+            </div>
+        </div>
+        
+    </header>
+    <div id="containertitre">
+        <H1>Formulaire de contact</H1>
+    </div>
+    <div class="formulairecontainer">
+        <form method="post">
+            <div class="formulaire">
+            <p>
+                <input type="text" name="name" placeholder="Nom" />
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="email" />
+            </p>
+            <p>
+                <textarea name="message" placeholder="Message"></textarea>
+            </p>
+            <button>Envoyer</button>
+        </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="logofooter">
+                <img src="../html/assets/logowlok.png" alt="logo">
+            </div>
+            <div class="linefooter">
+
+            </div>
+            <div class="navfooter">
+                <li> <a href="../html/index.html">Accueil</a></li>
+                <li> <a href="../html/groupe.html">Groupe</a></li>
+                <li> <a href="../html/medias.html">Médias</a></li>
+                <li> <a href="../html/event.html">Evènements</a></li>
+                <li> <a href="./contact.html">Contact</a></li>
+            </div>
+            <div class="reseaufooter">
+                    <a href="https://www.facebook.com/Washing-Line-108403356430864/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         jQuery(document).ready(function($) {
@@ -46,6 +103,8 @@
             });
         });
     </script>
+
+    
 </body>
 
 </html>
